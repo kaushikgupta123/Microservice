@@ -41,7 +41,7 @@ namespace ProductService.Controllers
                 _context.SaveChanges();
                 return StatusCode(StatusCodes.Status201Created, product);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
